@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="conteiner">
+        <h1>Localização</h1>
+        <form name="location">
+            <div id="cep">
+                <label for="cep">Informe o CEP</label>
+                <input class="max" name="cep" type="number" required>
+                <span id="cepErro"></span>
+            </div>
+            <div>
+                <label for="logradouro">Rua</label>
+                <input class="max" name="logradouro" type="text" required>
+            </div>
+            <div>
+                <label for="bairro">Bairro</label>
+                <input class="max" name="bairro" type="text" required>
+            </div>
+            <div class="flex">
+                <div>
+                    <label for="localidade">Cidade</label>
+                    <input class="medium" name="localidade" type="text" required>
+                </div>
+
+                <div>
+                    <label for="uf">UF</label>
+                    <input class="min" name="uf" type="text" required>
+                </div>
+            </div>
+            <div class="flex">
+                <div>
+                    <label for="ibge">IBGE</label>
+                    <input class="medium" name="ibge" type="text" required>
+                </div>
+
+                <div>
+                    <label for="ddd">DDD</label>
+                    <input class="min" name="ddd" type="text" required>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
